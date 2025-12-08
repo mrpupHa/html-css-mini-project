@@ -17,7 +17,154 @@
   </head>
   <body>
     <!-- champ -->
-    <section class="header"></section>
+    <section class="relative overflow-hidden md:h-[900px]">
+      <div
+        class="absolute inset-0 opacity-20 bg-cover bg-center md:h-[800px]"
+        style="background-image: url('/images/header/bg-header.jpg'); "
+      ></div>
+
+      <!-- navbar section -->
+      <div class="relative z-10 p-6 md:h-[800px] md:flex-col">
+        <nav
+          class="flex flex-row justify-between items-center w-full h-fit p-2 border-none relative z-10
+          md:justify-between"
+        >
+          <img src="/images/header/logo.png" alt="logo-tripp" />
+          <div class="hidden md:flex md:justify-center md:items-center md:gap-16">
+            <a
+              href="#"
+              class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+              >About</a
+            >
+            <a
+              href="#"
+              class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+              >Blog</a
+            >
+            <a
+              href="#"
+              class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+              >Tour Package</a
+            >
+          </div>
+
+          <button
+            class="hidden md:flex md:w-fit bottom-auto md:bg-[#FE5B3E] md:p-4 md:px-12 md:rounded-2xl md:text-white md:font-['DM_Sans',sans-serif]"
+          >
+            Contact Us
+          </button>
+
+          <div class="md:hidden group relative" tabindex="0">
+            <img src="/images/header/dropdown.png" class="md:hidden cursor-pointer" />
+            <div
+              class="invisible absolute top-14 -right-6 bg-white flex flex-col justify-center items-center gap-2 rounded-3xl py-3 px-6 shadow-md group-focus-within:visible min-w-[150px]"
+            >
+              <a
+                href="#"
+                class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+                >About</a
+              >
+              <a
+                href="#"
+                class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+                >Blog</a
+              >
+              <a
+                href="#"
+                class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+                >Tour Package</a
+              >
+            </div>
+          </div>
+        </nav>
+
+        <!-- hero section -->
+        <div class="md:flex flex-row-reverse justify-center items-center md:h-full md:mt-[-48px]">
+          <!-- img section -->
+          <div class="flex flex-col md:flex-row justify-center items-start relative h-72 md:h-64 w-full md:w-1/2">
+            <div class="relative p-8 md:m-0 w-full flex justify-center items-center md:w-fit md:h-full">
+              <img
+                src="/images/header/orange-circle.png"
+                alt="orange-circle"
+                class="relative md:w-screen md:max-w-lg"
+              />
+              <div class="absolute -left-6 top-1/3 md:top-1.5 md:-left-14">
+                <img
+                  src="/images/header/box-mountain-scot.png"
+                  alt="box-mountain-scot"
+                  class="md:w-[36rem] md:max-w-36 w-full"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- content -->
+          <div class="flex flex-col md:items-center md:justify-center md:py-4 md:px-6 w-full md:w-1/2 md:h-72">
+            <h1 class="font-paytoneone text-3xl py-2 md:text-8xl text-left md:text-left" style="font-family: 'Paytone One', sans-serif;">
+              Fuel Mind <br>by Travel
+            </h1>
+            <p style="font-family: 'DM Sans', sans-serif;" class="text-lg text-[#5A7184] md:text-xl text-left md:text-left ">
+              Enthusiastically extend extensive customer service<br>before best 
+              breed convergence completely.
+            </p>
+          </div>
+        </div>
+
+        <!-- section price -->
+        <div class="bg-white border rounded-3xl flex flex-col justify-between items-center p-8 my-8 h-fit gap-4 
+          md:flex-row md:justify-between md:items-end md:px-12 md:w-2/3 md:h-fit md:absolute md:-bottom-24 md:right-10 md:shadow-xl">
+          <!-- location -->
+          <div class="flex flex-col justify-center items-center gap-2 md:flex md:flex-row">
+            <div>
+              <div class="flex flex-row justify-center items-center gap-2 md:justify-start">
+                <p style="font-family: 'DM Sans', sans-serif; color: #A8A8A8; font-weight: bold;">Location</p>
+                <img src="/images/header/arrow-down.png" alt="arrow-down" class="h-fit">
+              </div>
+              <p style="font-family: 'DM Sans', sans-serif; color: #221314; font-weight: bold;">Cox’s Bazar</p>
+            </div>
+
+            <img src="/images/header/underline.png" alt="underline" class="md:rotate-90 md:self-center">
+
+            <!-- date -->
+            <div>
+              <div class="flex flex-row justify-center items-center gap-2 md:justify-start">
+                <p style="font-family: 'DM Sans', sans-serif; color: #A8A8A8; font-weight: bold;">Date</p>
+                <img src="/images/header/arrow-down.png" alt="arrow-down" class="h-fit">
+              </div>
+              <p style="font-family: 'DM Sans', sans-serif; color: #221314; font-weight: bold;">Mon, 14 Mar - Thu, 17 Mar</p>
+            </div>
+
+            <img src="/images/header/underline.png" alt="underline" class="md:rotate-90 md:self-center">
+
+            <!-- avg.-price  -->
+            <div>
+              <div class="flex flex-row justify-center items-center gap-2 md:justify-start">
+                <p style="font-family: 'DM Sans', sans-serif; color: #A8A8A8; font-weight: bold;">Avg. Price</p>
+                <img src="/images/header/arrow-down.png" alt="arrow-down" class="h-fit">
+              </div>
+              <p style="font-family: 'DM Sans', sans-serif; color: #221314; font-weight: bold;">$300 - $600</p>
+            </div>
+          </div>
+
+          <!-- button -->
+          <div class="flex flex-row justify-center items-center bg-orange-500 rounded-2xl w-2/4 md:w-1/5 h-2/4 p-4 gap-4">
+            <button class="button-explore text-white" style="font-family: 'DM Sans', sans-serif;">Explore</button>
+            <img src="/images/header/arrow-button.png" alt="arrow-button">
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- best -->
     <section class="service-packages"></section>
