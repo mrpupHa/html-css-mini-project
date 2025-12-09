@@ -15,20 +15,693 @@
     />
     <title>Tripp</title>
   </head>
+
   <body>
     <!-- champ -->
-    <section class="header"></section>
+    <section class="relative overflow-hidden h-[980px]">
+      <div
+        class="absolute inset-0 opacity-30 bg-cover bg-center h-[800px]"
+        style="background-image: url('/images/header/bg-header.jpg'); "
+      ></div>
+
+      <!-- navbar section -->
+      <main class="relative z-10 p-6 md:h-[800px] md:flex-col">
+        <nav
+          class="flex flex-row justify-between items-center w-full h-fit p-2 border-none relative z-10 md:justify-between"
+        >
+          <img src="/images/header/logo.png" alt="logo-tripp" />
+          <div class="hidden md:flex md:justify-center md:items-center md:gap-16">
+            <a
+              href="#"
+              class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+              >About</a
+            >
+            <a
+              href="#"
+              class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+              >Blog</a
+            >
+            <a
+              href="#"
+              class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+              >Tour Package</a
+            >
+          </div>
+
+          <button
+            class="hidden md:flex md:w-fit bottom-auto md:bg-gradient-to-r md:from-[#FE7B49] md:to-[#FE5B3E] md:p-4 md:px-12 md:rounded-2xl md:text-white md:font-['DM_Sans',sans-serif]"
+          >
+            Contact Us
+          </button>
+
+          <div class="md:hidden group relative" tabindex="0">
+            <img src="/images/header/dropdown.png" class="md:hidden cursor-pointer" />
+            <div
+              class="invisible absolute top-8 -right-6 bg-white flex flex-col justify-center items-center gap-2 rounded-3xl py-3 px-6 drop-shadow-lg group-focus-within:visible min-w-[150px]"
+            >
+              <a
+                href="#"
+                class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+                >About</a
+              >
+              <a
+                href="#"
+                class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+                >Blog</a
+              >
+              <a
+                href="#"
+                class="hover:underline hover:decoration-[#FF6525] hover:underline-offset-8 font-semibold text-slate-400 hover:text-black"
+                >Tour Package</a
+              >
+            </div>
+          </div>
+        </nav>
+
+        <!-- hero section -->
+        <div class="md:flex flex-row-reverse justify-center items-center md:h-full md:mt-[-48px]">
+          <!-- img section -->
+          <div class="flex flex-col md:flex-row justify-center items-start relative h-72 md:h-64 w-full md:w-1/2">
+            <div class="p-8 w-full flex justify-center items-center md:w-fit md:h-full">
+              <div class="relative flex justify-center items-center">
+                <img
+                  src="/images/header/orange-circle.png"
+                  alt="orange-circle"
+                  class="w-[260px] max-w-xs md:w-[560px] md:max-w-xl"
+                />
+                <div class="absolute -left-14 top-1/2 md:-left-32 md:top-1/2 -translate-y-1/2 drop-shadow-lg">
+                  <img
+                    src="/images/header/box-mountain-scot.png"
+                    alt="box-mountain-scot"
+                    class="w-24 md:w-52 "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- content -->
+          <div class="flex flex-col md:items-center md:justify-center md:py-4 md:px-6 w-full md:w-1/2 md:h-72">
+            <h1
+              class="font-paytoneone text-3xl py-2 md:text-8xl text-left md:text-left"
+              style="font-family: 'Paytone One', sans-serif;"
+            >
+              Fuel Mind <br />by Travel
+            </h1>
+            <p
+              style="font-family: 'DM Sans', sans-serif;"
+              class="text-lg text-[#5A7184] md:text-xl text-left md:text-left "
+            >
+              Enthusiastically extend extensive customer service<br />before best breed convergence completely.
+            </p>
+          </div>
+        </div>
+
+        <!-- section price -->
+        <div
+          class="bg-white border rounded-3xl flex flex-col justify-between items-center p-8 my-8 h-full gap-4 shadow-xl md:flex-row md:justify-between md:items-end md:px-12 md:w-2/3 md:h-fit md:absolute md:-bottom-24 md:right-10"
+        >
+          <!-- location -->
+          <div class="flex flex-col justify-center items-center gap-2 md:flex md:flex-row">
+            <div>
+              <div class="flex flex-row justify-center items-center gap-2 md:justify-start">
+                <span style="font-family: 'DM Sans', sans-serif; color: #A8A8A8; font-weight: bold;">Location</span>
+                <img src="/images/header/arrow-down.png" alt="arrow-down" class="h-fit" />
+              </div>
+              <p style="font-family: 'DM Sans', sans-serif; color: #221314; font-weight: bold;">Cox's Bazar</p>
+            </div>
+
+            <img src="/images/header/underline.png" alt="underline" class="md:rotate-90 md:self-center" />
+
+            <!-- date -->
+            <div>
+              <div class="flex flex-row justify-center items-center gap-2 md:justify-start">
+                <span style="font-family: 'DM Sans', sans-serif; color: #A8A8A8; font-weight: bold;">Date</span>
+                <img src="/images/header/arrow-down.png" alt="arrow-down" class="h-fit" />
+              </div>
+              <p style="font-family: 'DM Sans', sans-serif; color: #221314; font-weight: bold;">
+                Mon, 14 Mar - Thu, 17 Mar
+              </p>
+            </div>
+
+            <img src="/images/header/underline.png" alt="underline" class="md:rotate-90 md:self-center" />
+
+            <!-- avg.-price  -->
+            <div>
+              <div class="flex flex-row justify-center items-center gap-2 md:justify-start">
+                <span style="font-family: 'DM Sans', sans-serif; color: #A8A8A8; font-weight: bold;">Avg. Price</span>
+                <img src="/images/header/arrow-down.png" alt="arrow-down" class="h-fit" />
+              </div>
+              <p style="font-family: 'DM Sans', sans-serif; color: #221314; font-weight: bold;">$300 - $600</p>
+            </div>
+          </div>
+
+          <!-- button -->
+          <div
+            class="flex flex-row justify-center items-center bg-gradient-to-r from-[#FE7B49] to-[#FE5B3E] rounded-2xl w-2/4 md:w-1/5 h-2/4 p-4 gap-4"
+          >
+            <button class="w-full md:w-auto flex items-center justify-center gap-2 text-white font-semibold px-6 py-1 rounded-2xl">
+              <span>Explore</span>
+              <img src="/images/header/arrow-button.png" alt="arrow" class="h-4 w-4" />
+            </button>
+          </div>
+        </div>
+      </main>
+    </section>
 
     <!-- best -->
-    <section class="service-packages"></section>
+    <section class="service-packages">
+      <!-- start feature service -->
+      <div class="tltle-bar flex justify-evenly  min-[376px]:gap-[450px]">
+        <h2 class="topic font-bold text-[24px] min-[376px]:text-[48px] tracking-normal" style="font-family: 'Poppins', sans-serif;">
+          Start Your<br class="min-[376px]:hidden"> Vacation<br class="hidden min-[1920px]:block"> with <br class="min-[376px]:hidden">Lost of Services!
+        </h2>
+        <button class="View All Services font-bold text-[18px] text-[#FE5B3E] flex items-end hover:scale-[1.02]" style="font-family: 'DM Sans', sans-serif;">
+          View All <span class="max-[375px]:hidden px-3">Services</span> <span class="pl-2 pb-[3px] scale-150">→</span>
+        </button>
+      </div>
+
+      <div class="service-box flex w-full h-[300px] overflow-x-auto snap-x snap-mandatory gap-4 px-6 sm:w-auto sm:overflow-hidden sm:justify-center sm:gap-8 sm:px-0" style="scrollbar-width: none; -ms-overflow-style: none;">
+        <button>
+          <div class="service-family-vacations flex flex-col w-[332.5px] h-[272px] border-[#F0EDED] border-[1px] rounded-[20px] justify-center items-center gap-2 shrink-0 snap-center hover:shadow-lg hover:scale-[1.02]">
+            <div class="img-container bg-[#FE5B3E1A] w-[80px] h-[80px] flex justify-center items-center rounded-[20px]">
+              <img src="images/service-packages/family (2) 1.png" class="w-[40px] h-[40px]">
+            </div>
+            <p class="service-name font-semibold text-[24px] tracking-[0.2px] pt-6" style="font-family: 'Poppins', sans-serif;">Family Vacations</p>
+            <p class="service-properties font-normal text-[#5A7184]" style="font-family: 'DM Sans', sans-serif;">155 Properties</p>
+          </div>
+        </button>
+
+        <button>
+          <div class="service-scuba-diving flex flex-col w-[332.5px] h-[272px] border-[#F0EDED] border-[1px] rounded-[20px] justify-center items-center gap-2 shrink-0 snap-center hover:shadow-lg hover:scale-[1.02]">
+            <div class="img-container bg-[#FE5B3E1A] w-[80px] h-[80px] flex justify-center items-center rounded-[20px]">
+              <img src="images/service-packages/scuba-diving 1.png" class="w-[40px] h-[40px]">
+            </div>
+            <p class="service-name font-semibold text-[24px] tracking-[0.2px] pt-6" style="font-family: 'Poppins', sans-serif;">Scuba Diving</p>
+            <p class="service-properties font-normal text-[#5A7184]" style="font-family: 'DM Sans', sans-serif;">143 Properties</p>
+          </div>
+        </button>
+
+        <button>
+          <div class="service-hunting-trip flex flex-col w-[332.5px] h-[272px] border-[#F0EDED] border-[1px] rounded-[20px] justify-center items-center gap-2 shrink-0 snap-center hover:shadow-lg hover:scale-[1.02]">
+            <div class="img-container bg-[#FE5B3E1A] w-[80px] h-[80px] flex justify-center items-center rounded-[20px]">
+              <img src="images/service-packages/deer-facing-right 1.png" class="w-[40px] h-[40px]">
+            </div>
+            <p class="service-name font-semibold text-[24px] tracking-[0.2px] pt-6" style="font-family: 'Poppins', sans-serif;">Hunting Trip</p>
+            <p class="service-properties font-normal text-[#5A7184]" style="font-family: 'DM Sans', sans-serif;">122 Properties</p>
+          </div>
+        </button>
+
+        <button>
+          <div class="service-mountain-bike flex flex-col w-[332.5px] h-[272px] border-[#F0EDED] border-[1px] rounded-[20px] justify-center items-center gap-2 shrink-0 snap-center hover:shadow-lg hover:scale-[1.02]">
+            <div class="img-container bg-[#FE5B3E1A] w-[80px] h-[80px] flex justify-center items-center rounded-[20px]">
+              <img src="images/service-packages/mountain-bike 1.png" class="w-[40px] h-[40px]">
+            </div>
+            <p class="service-name font-semibold text-[24px] tracking-[0.2px] pt-6" style="font-family: 'Poppins', sans-serif;">Mountain Bike</p>
+            <p class="service-properties font-normal text-[#5A7184]" style="font-family: 'DM Sans', sans-serif;">185 Properties</p>
+          </div>
+        </button>
+      </div>
+
+      <!-- start feature package -->
+      <div class="feature-package max-[375px]:w-[375px] max-[375px]:h-[804px] flex justify-center flex-col">
+        <h2 class="pt-28 pb-5 font-bold text-[24px] min-[376px]:text-[48px] tracking-normal flex justify-center text-center"
+          style="font-family: 'Poppins' sans-serif;">Our Upcoming<br>Tour Package</h2>
+
+        <div class="service-box flex w-full h-max overflow-x-auto snap-x snap-mandatory gap-4 px-4 sm:w-auto sm:overflow-hidden sm:justify-center sm:gap-8 sm:px-0 min-[376px]:pb-8" style="scrollbar-width: none; -ms-overflow-style: none;">
+
+          <button class="min-[376px]:hover:shadow-xl min-[376px]:hover:scale-[1.01] min-[376px]:rounded-[20px] min-[376px]:px-3 min-[376px]:py-3">
+            <div class="content-box flex justify-center flex-col w-[355px] h-[494px] items-center gap-2 shrink-0 snap-center
+        min-[376px]:h-[606px] min-[376px]:w-[453px] min-[376px]:pt-6">
+              <div class="img-card relative w-[355px] h-[407.51px] min-[376px]:h-[520px] min-[376px]:w-[453px] flex justify-center">
+                <img src="images/service-packages/Eiffel Tower.jpg" class="max-[375px]:w-[355px] max-[375px]:h-[407.51px] rounded-[20px] pb-3 object-cover">
+                <p class="font-semibold text-[24px] text-white absolute right-6 top-3"
+            font-family: 'Poppins'>$599</p>
+              </div>
+              <div class="content-detail flex justify-stretch gap-6 pl-6 max-[375px]:w-[375px] max-[375px]:h-[804px] min-[376px]:pl-0 min-[376px]:gap-8">
+                <img src="images/service-packages/Location.png" class="w-[18px] h-[21px] relative top-2 object-cover">
+                <div class="flex flex-col pr-4 min-[376px]:pr-[100px]">
+                  <p class="content-name font-semibold text-[24px]" style="font-family: 'Poppins' sans-serif;">Eiffel Tower</p>
+                  <p class="font-normal text-[18px] text-[#5A7184] text-left" style="font-family: 'DM Sans', sans-serif;">5d - 4n</p>
+                </div>
+                <div class="star w-[100px] h-[60px] flex justify-center items-center gap-2 pl-3">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <button class="min-[376px]:hover:shadow-xl min-[376px]:hover:scale-[1.01] min-[376px]:rounded-[20px] min-[376px]:px-3 min-[376px]:py-3">
+            <div class="content-box flex justify-center flex-col w-[355px] h-[494px] items-center gap-2 shrink-0 snap-center min-[376px]:h-[606px] min-[376px]:w-[453px]">
+              <div class="img-card relative w-[355px] h-[407.51px] min-[376px]:h-[520px] min-[376px]:w-[453px] flex justify-center">
+                <img src="images/service-packages/Big Bear Lake.jpg" class="max-[375px]:w-[355px] max-[375px]:h-[407.51px] rounded-[20px] pb-3 object-cover">
+                <p class="font-semibold text-[24px] text-white absolute right-6 top-3"
+            font-family: 'Poppins'>$480</p>
+              </div>
+              <div class="content-detail flex justify-stretch gap-6 pl-6 max-[375px]:w-[375px] max-[375px]:h-[804px] min-[376px]:pl-0 min-[376px]:gap-8">
+                <img src="images/service-packages/Location.png" class="w-[18px] h-[21px] relative top-2 object-cover">
+                <div class="flex flex-col pr-2 min-[376px]:pr-[80px]">
+                  <p class="content-name font-semibold text-[24px]" style="font-family: 'Poppins' sans-serif;">Big Bear Lake</p>
+                  <p class="font-normal text-[18px] text-[#5A7184] text-left" style="font-family: 'DM Sans', sans-serif;">5d - 4n</p>
+                </div>
+                <div class="star w-[100px] h-[60px] flex justify-center items-center gap-2 pl-3">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <button class="min-[376px]:hover:shadow-xl min-[376px]:hover:scale-[1.01] min-[376px]:rounded-[20px] min-[376px]:px-3 min-[376px]:py-3">
+            <div class="content-box flex justify-center flex-col w-[355px] h-[494px] items-center gap-2 shrink-0 snap-center
+                    min-[376px]:h-[606px] min-[376px]:w-[453px] min-[376px]:pt-6">
+              <div class="img-card relative w-[355px] h-[407.51px] min-[376px]:h-[520px] min-[376px]:w-[453px] flex justify-center">
+                <img src="images/service-packages/Colorado Springs.jpg" class="max-[375px]:w-[355px] max-[375px]:h-[407.51px] rounded-[20px] pb-3 object-cover">
+                <p class="font-semibold text-[24px] text-white absolute right-6 top-3"
+            font-family: 'Poppins'>$550</p>
+              </div>
+              <div class="content-detail flex justify-stretch gap-2 pl-6 max-[375px]:w-[375px] max-[375px]:h-[804px] min-[376px]:pl-0 min-[376px]:gap-8">
+                <img src="images/service-packages/Location.png" class="w-[18px] h-[21px] relative top-2 object-cover">
+                <div class="flex flex-col pr-1 min-[376px]:pr-[55px]">
+                  <p class="content-name font-semibold text-[24px]" style="font-family: 'Poppins' sans-serif;">Colorado Springs</p>
+                  <p class="font-normal text-[18px] text-[#5A7184] text-left" style="font-family: 'DM Sans', sans-serif;">5d - 4n</p>
+                </div>
+                <div class="star w-[100px] h-[60px] flex justify-center items-center gap-2 pl-3">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                  <img src="images/service-packages/Star.png" class="flex items-center justify-center ">
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+
+        <div class="flex justify-center pb-8 pt-3">
+          <button class="button flex justify-center bg-gradient-to-t from-[#FE7B49] to-[#FE5B3E] w-[180px] h-[70px] text-white items-center rounded-[20px] hover:bg-gradient-to-l hover:scale-[1.03] hover:shadow-lg"
+            style="font-family: 'DM Sans', sans-serif;">View All<span class="pl-3 scale-150 pb-1">→</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
 
     <!-- jump -->
-    <section class="destination"></section>
+    <section class="bg-[#FEF9F3] py-16 flex justify-center">
+      <div class="w-full max-w-[1920px] px-6">
+
+        <div class="lg:hidden max-w-sm mx-auto">
+
+          <h2 class="font-poppins text-[24px] font-bold text-[#221314] mt-8 flex justify-start">
+            Most Popular <br />
+            Destination of Us!
+          </h2>
+
+          <p class="font-sans text-[18px] max-w-[327px] mx-auto text-[#625858] mt-6 leading-7 flex justify-start">
+            Credibly unleash economically sound <br />
+            e-business with bleeding-edge users. <br />
+            Uniquely simplify mission-critical <br />
+            benefits with cross-unit manufactured <br />
+            products. Energistically re-engineer.
+          </p>
+
+          <div class="mt-10">
+            <div class="w-[327px] h-[450px] bg-[#C4C4C4] rounded-2xl mx-auto relative">
+              <div class="absolute bottom-9 left-10 right-10 flex justify-between items-center">
+                <div>
+                  <p class="font-poppins text-[20px] text-[#FFFFFF] font-semibold">Great Wall of China</p>
+                  <p class="font-sans text-[#EAEAEA] text-[18px]">Beijing, China</p>
+                </div>
+
+                <div class="flex items-center space-x-3 text-[#FFFFFF]">
+                  <span class="font-poppins text-[18px] text-[#FFFFFF]">4.8</span>
+                  <img src="./images/destination/Star.png" class="w-[18px] h-[18px]" alt="star" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center space-x-3 mt-8">
+            <div class="w-[20px] h-[20px] rounded-full bg-[#E9E4DE]"></div>
+
+            <div class="w-[20px] h-[20px] rounded-full border-[0.5px] border-[#FF8345] relative">
+              <div class="w-[7.12px] h-[7.12px] bg-[#FF8345] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+            </div>
+
+            <div class="w-[20px] h-[20px] rounded-full bg-[#E9E4DE]"></div>
+          </div>
+
+          <div class="mt-8 flex justify-center">
+            <button class="bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49] w-[180px] h-[70px] text-[#FFFFFF] px-10 py-3 rounded-xl font-sans text-[16px] shadow-md flex items-center justify-between">
+              View All
+              <img src="./images/destination/Vector.png" class="w-[21px] h-[13.5px]" alt="arrow" />
+            </button>
+          </div>
+
+        </div>
+
+        <div class="hidden lg:flex justify-between items-start mt-20 px-24 py-20">
+
+          <div class="flex space-x-8 relative">
+
+            <div class="w-[332px] h-[450px] bg-[#C4C4C4] rounded-2xl relative">
+              <div class="absolute bottom-9 left-10 right-10 flex justify-between items-center">
+                <div>
+                  <p class="font-poppins text-[#FFFFFF] text-[20px] ">Great Wall of China</p>
+                  <p class="font-sans text-[#EAEAEA] text-[18px]">Beijing, China</p>
+                </div>
+                <div class="flex items-center space-x-5 text-[#FFFFFF]">
+                  <span class="font-poppins text-[#FFFFFF] text-[18px]">4.8</span>
+                  <img src="./images/destination/Star.png" class="w-[15px] h-[14.25px]" alt="star" />
+                </div>
+              </div>
+            </div>
+
+            <div class="w-[332px] h-[450px] bg-[#C4C4C4] rounded-2xl relative -mt-8">
+              <div class="absolute bottom-9 left-10 right-10 flex justify-between items-center">
+                <div>
+                  <p class="text-[#FFFFFF] font-poppins text-[20px] ">Lake Powell</p>
+                  <p class="text-[#EAEAEA] font-sans text-[18px]">USA</p>
+                </div>
+                <div class="flex items-center space-x-5 text-[#FFFFFF]">
+                  <span class="text-[18px] text-[#FFFFFF] font-poppins ">4.8</span>
+                  <img src="./images/destination/Star.png" class="w-[15px] h-[14.25px]" alt="star" />
+                </div>
+              </div>
+            </div>
+
+            <div class="w-[332px] h-[450px] bg-[#C4C4C4] rounded-2xl relative">
+              <div class="absolute bottom-9 left-10 right-10 flex justify-between items-center">
+                <div>
+                  <p class="text-[#FFFFFF] font-poppins text-[20px]">Deep Creek Lake</p>
+                  <p class="text-[#EAEAEA] font-sans text-[18px]">Maryland</p>
+                </div>
+                <div class="flex items-center space-x-5 text-[#FFFFFF]">
+                  <span class="text-[18px] text-[#FFFFFF] font-poppins ">4.8</span>
+                  <img src="./images/destination/Star.png" class="w-[15px] h-[14.25px]" alt="star" />
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden lg:flex items-center space-x-6 absolute -bottom-14 left-1/2 -translate-x-[70%]">
+              <button aria-label="Previous" class="p-2 flex items-center justify-center">
+                <img src="./images/destination/Vector.svg" class="w-[28px] h-[18px] transform rotate-180" alt="prev" />
+              </button>
+
+              <button aria-label="Next" class="p-2 flex items-center justify-center">
+                <img src="./images/destination/Vector.svg" class="w-[48px] h-[48px]" alt="next" />
+              </button>
+            </div>
+
+          </div>
+
+          <div class="max-w-[574px] px-4">
+            <h2 class="text-[48px] mt-5 font-poppins font-bold text-[#221314]">
+              Most Popular <br/>
+              Destination of Us!
+            </h2>
+
+            <p class="mt-6 max-w-[578px] text-[18px] font-sans text-[#625858] leading-10">
+              Credibly unleash economically sound e-business with <br> bleeding-edge users.
+              Uniquely simplify mission-critical benefits with cross-unit manufactured products. Energistically re-engineer.
+            </p>
+
+            <button class="bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49] w-[180px] h-[70px] text-[#FFFFFF] px-8 py-3 rounded-xl shadow flex items-center justify-between mt-10">
+              <span>View All</span>
+              <img src="./images/destination/Vector.png" class="w-[21px] h-[13.5px]" alt="arrow" />
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="block md:hidden w-full px-6 py-10">
+
+      <div class="flex justify-center w-full mb-8">
+        <div class="relative w-[351.66px] h-[351.66px] rounded-full border border-[#A8A8A8]">
+          <img src="./images/destination/orange-circle.png" alt="circle" class="absolute w-[302.96px] h-[302.96px] object-cover rounded-full top-9 left-4" />
+        </div>
+      </div>
+
+      <div class="flex flex-col">
+
+        <div>
+          <h2 class="font-bold text-[24px] text-[#221314] font-poppins leading-tight flex text-left">Feedback from<br>Our Customers</h2>
+        </div>
+
+        <p class="text-[20px] text-[#221314] text-left mt-4 font-poppins teleading-relaxed">
+          "I've Went ot America from Tripp Play about 1 years ago.<br>
+          Tripp make the prototyping process so easy and faster.<br>
+          I feel this is the best apps for Prototyping use"
+        </p>
+
+        <p class="text-[18px] mt-4 text-[#5A7184] font-sans">— Ferdous · CEO of Coco</p>
+
+        <div class="flex gap-1 mt-5">
+          <div class="">
+            <img src="./images/destination/Arrow - Left.png">
+          </div>
+          <div class="">
+            <img src="./images/destination/Arrow - Right.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hidden md:block w-full max-w-[1920px] mx-auto px-6 py-20">
+      <div class="flex flex-row items-center justify-center gap-20">
+
+        <div class="flex justify-end w-1/2">
+          <div class="relative w-[632px] h-[632px] rounded-full border border-[#A8A8A8]">
+            <img src="./images/destination/orange-circle.png" alt="circle" class="absolute w-[544.48px] h-[544.48px] object-cover rounded-full top-16 left-14" />
+          </div>
+        </div>
+
+        <!-- TEXT DESKTOP -->
+        <div class="w-1/2">
+          <h2 class="font-bold font-poppins text-[48px] text-[#221314] leading-tight">Feedback from<br>Our Customers</h2>
+
+          <p class="font-poppins text-[24px] text-[#221314] mt-4 leading-relaxed">
+            "I've Went ot America from Tripp Play about 1 years ago.<br>
+            Tripp make the prototyping process so easy and faster.<br>
+            I feel this is the best apps for Prototyping use"
+          </p>
+
+          <p class="font-sans mt-4 text-[18px] text-[#5A7184]"> — Ferdous · CEO of Coco</p>
+
+          <div class="flex items-center gap-3 mt-5">
+            <div class="">
+              <img src="./images/destination/Arrow - Left.png">
+            </div>
+            <div class="">
+              <img src="./images/destination/Arrow - Right.png">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- tew -->
-    <section class="places"></section>
+    <section>
+      <div
+        class="places flex flex-col justify-center items-center gap-[40px] md:gap-[70px] w-full"
+      >
+        <div class="mt-[68px] text-center">
+          <h2
+            class="font-[poppins] text-2xl md:text-5xl font-bold leading-normal md:leading-normal"
+          >
+            World Top Visiting
+          </h2>
+          <h2
+            class="font-[poppins] text-2xl md:text-5xl font-bold leading-normal md:leading-normal"
+          >
+            Place in 2021
+          </h2>
+        </div>
+        <div class="relative w-[100%] md:w-[100%] aspect-[16/9]">
+          <img
+            src="./images/places/Map.png"
+            class="w-[95%] md:w-[80%] mx-auto"
+          />
+          <div class="absolute left-[15%] top-[32%] md:left-[21%] md:top-[28%]">
+            <img
+              src="./images/places/mexico.png"
+              alt="mexico"
+              class="w-[28px] h-[28px] md:w-[120px] md:h-[120px] border-[1px] md:border-[5px] rounded-full shadow-[0_5px_25px_rgba(0,0,0,0.5)] border-white md:border-white md:shadow-[0_10px_40px_rgba(0,0,0,0.5)]"
+            />
+            <div class="hidden md:block md:text-center md:mt-[24px]">
+              <h3 class="font-['Poppins'] md:text-2xl md:font-semibold">
+                Mexico
+              </h3>
+              <p
+                class="font-['DM_Sans'] md:text-lg md:font-normal text-[#5A7184]"
+              >
+                03 tour
+              </p>
+            </div>
+          </div>
+          <div class="absolute left-[45%] top-[20%] md:top-[19%] md:left-[48%]">
+            <img
+              src="./images/places/france.png"
+              alt="france"
+              class="w-[28px] h-[28px] md:w-[120px] md:h-[120px] border-[1px] md:border-[5px] rounded-full shadow-[0_5px_25px_rgba(0,0,0,0.5)] border-white md:border-white md:shadow-[0_10px_40px_rgba(0,0,0,0.5)]"
+            />
+            <div class="hidden md:block md:text-center md:mt-[24px]">
+              <h3 class="font-['Poppins'] md:text-2xl md:font-semibold">
+                France
+              </h3>
+              <p
+                class="font-['DM_Sans'] md:text-lg md:font-normal text-[#5A7184]"
+              >
+                03 tour
+              </p>
+            </div>
+          </div>
+          <div
+            class="absolute right-[15%] top-[50%] md:right-[19%] md:top-[45%]"
+          >
+            <img
+              src="./images/places/australia.png"
+              alt="australia"
+              class="w-[28px] h-[28px] md:w-[120px] md:h-[120px] border-[1px] md:border-[5px] rounded-full shadow-[0_5px_25px_rgba(0,0,0,0.5)] border-white md:border-white md:shadow-[0_10px_40px_rgba(0,0,0,0.5)]"
+            />
+            <div class="hidden md:block md:text-center md:mt-[24px]">
+              <h3 class="font-['Poppins'] md:text-2xl md:font-semibold">
+                Australia
+              </h3>
+              <p
+                class="font-['DM_Sans'] md:text-lg md:font-normal text-[#5A7184]"
+              >
+                02 tour
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- foy -->
-    <section class="footer"></section>
+    <section class="relative overflow-hidden md:h-full">
+      <footer
+        class="footer bg-[url(images/footer/Background.jpg)] bg-top pt-36 pb-36 px-10 sm:px-8 md:px-52"
+      >
+        <!-- Subscribe Section -->
+        <div class="max-w-md mr-auto mb-12">
+          <h2 class="text-4xl md:text-4xl leading-tight font-poppins font-bold text-[#221314] mb-10">
+            Subscribe<br />
+            for every Tour<br />
+            News & Tips
+          </h2>
+
+          <!-- Email Input and Subscribe Button -->
+          <div class="bg-white rounded-2xl shadow-md flex items-center mb-10 w-full max-w-md p-2 min-w-0 mr-auto">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="flex-1 px-4 py-4 md:py-5 bg-transparent text-gray-700 placeholder-gray-400 focus:outline-none font-[DM_Sans] rounded-xl text-base min-w-0"
+            />
+            <button
+              class="px-6 md:px-5 py-5 md:py-5 rounded-2xl bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49] text-white font-[DM_Sans] flex items-center gap-2 hover:from-[#FE4A2E] hover:to-[#FE6B39] transition-all whitespace-nowrap text-base flex-shrink-0"
+            >
+              Subscribe
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Brand, Copyright, Social -->
+        <div class="w-full mx-auto flex flex-col md:flex-row md:items-center gap-6 md:gap-40">
+          <div class="font-[DM_Sans]">
+            <div class="flex items-center gap-1 mb-1">
+              <img
+                src="images/footer/Tripp.png"
+                alt="Tripp"
+                class="w-16 "
+              />
+              <span class=" rounded-full translate-y-[5px] inline-block"></span>
+            </div>
+            <p class="text-sm text-black">
+              Copyright©Tripp.All right reserved
+            </p>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div class="flex justify-start md:justify-end gap-2">
+            <a
+              href="#"
+              class="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors shadow-sm"
+            >
+              <img
+                src="images/footer/Google.jpg"
+                alt="Google"
+                class="w-4 h-4 object-contain"
+              />
+            </a>
+            <a
+              href="#"
+              class="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors shadow-sm"
+            >
+              <img
+                src="images/footer/twitter.jpg"
+                alt="Twitter"
+                class="w-4 h-4 object-contain"
+              />
+            </a>
+            <a
+              href="#"
+              class="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors shadow-sm"
+            >
+              <img
+                src="images/footer/instagram.jpg"
+                alt="Instagram"
+                class="w-4 h-4 object-contain"
+              />
+            </a>
+            <a
+              href="#"
+              class="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors shadow-sm"
+            >
+              <img
+                src="images/footer/in.jpg"
+                alt="LinkedIn"
+                class="w-4 h-4 object-contain"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </section>
   </body>
 </html>
